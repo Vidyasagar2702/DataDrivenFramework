@@ -30,7 +30,7 @@ public class AddCustomerTest extends TestBase {
 		click("addbtn_CSS");
 		Thread.sleep(2000);
 		
-		//branch commit
+		//branch commits
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		
 		Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
