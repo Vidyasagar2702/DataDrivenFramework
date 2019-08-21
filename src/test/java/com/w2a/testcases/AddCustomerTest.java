@@ -29,6 +29,8 @@ public class AddCustomerTest extends TestBase {
 		type("postcode_CSS",data.get("postcode"));
 		click("addbtn_CSS");
 		Thread.sleep(2000);
+		
+		//branch commit
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		
 		Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
